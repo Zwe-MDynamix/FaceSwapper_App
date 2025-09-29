@@ -1,7 +1,9 @@
 # Face Swapper App 🎭 
 🌟 Docker Images/Containers, GitLab CI-CD Pipeline & README created and written by: 
-|| **Zwelakhe Msuthu** | DevOps, SecDevOps & Cloud Infrastructure Engineer ||
-|| Zwe_M Dynamix | E: zwenix@gmail.com ||
+
+| **Zwelakhe Msuthu** | DevOps, SecDevOps & Cloud Infrastructure Engineer |
+
+| **Zwe_M Dynamix** | e: zwenix@gmail.com |
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/zwelakhem/face-swapper-app)](https://hub.docker.com/r/zwelakhem/face-swapper-app)
 [![Docker Image Size](https://img.shields.io/docker/image-size/zwelakhem/face-swapper-app)](https://hub.docker.com/r/zwelakhem/face-swapper-app)
