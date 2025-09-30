@@ -1,9 +1,7 @@
 # Build stage - Ubuntu 20.04
 FROM ubuntu:20.04 as builder
-
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install Python and build tools
 RUN apt-get update && apt-get install -y \
     python3.9 \
     python3.9-dev \
@@ -22,12 +20,12 @@ RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1
 WORKDIR /app
 COPY requirements.txt .
 
+# Install everything including dependencies
 RUN python -m pip install --upgrade pip setuptools wheel
-RUN python -m pip wheel --no-cache-dir --no-deps --wheel-dir /app/wheels -r requirements.txt
+RUN python -m pip wheel --no-cache-dir --wheel-dir /app/wheels -r requirements.txt
 
-# Production stage
+# Production stage - Ubuntu 20.04 slim
 FROM ubuntu:20.04
-
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y \
@@ -49,11 +47,8 @@ RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1
 WORKDIR /app
 
 COPY --from=builder /app/wheels /wheels
-COPY requirements.txt .
-
 RUN python -m pip install --upgrade pip
-RUN python -m pip install --no-index --find-links /wheels -r requirements.txt && \
-    rm -rf /wheels
+RUN python -m pip install --no-cache-dir /wheels/*.whl && rm -rf /wheels
 
 COPY . .
 
