@@ -12,10 +12,10 @@ __description__ = "A professional-grade face swapping application built with Str
 
 # Package metadata
 __title__ = "face-swapper-app"
-__url__ = "https://github.com/zwelakhem/face-swapper-app"
-__download_url__ = f"https://github.com/zwelakhem/face-swapper-app/archive/v{__version__}.tar.gz"
-__bugtrack_url__ = "https://github.com/zwelakhem/face-swapper-app/issues"
-__docker_url__ = "https://hub.docker.com/r/zwelakhem/face-swapper-app"
+__url__ = "https://github.com/Zwe-MDynamix/FaceSwapper_App"
+__download_url__ = f"https://github.com/Zwe-MDynamix/FaceSwapper_App/archive/v{__version__}.tar.gz"
+__bugtrack_url__ = "https://github.com/Zwe-MDynamix/FaceSwapper_App/issues"
+__docker_url__ = "https://hub.docker.com/r/Zwe-MDynamix/FaceSwapper_App"
 
 # Import main components for easy access
 try:

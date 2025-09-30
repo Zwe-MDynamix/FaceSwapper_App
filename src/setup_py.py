@@ -51,8 +51,8 @@ setup(
     long_description_content_type='text/markdown',
     
     # URLs
-    url='https://github.com/zwelakhem/face-swapper-app',
-    download_url='https://github.com/zwelakhem/face-swapper-app/archive/v{}.tar.gz'.format(get_version()),
+    url='https://github.com/Zwe-MDynamix/FaceSwapper_App',
+    download_url='https://github.com/Zwe-MDynamix/FaceSwapper_App/archive/v{}.tar.gz'.format(get_version()),
     
     # Author information
     author='Zwelakhe Mthembu',
@@ -160,10 +160,10 @@ setup(
     
     # Project URLs
     project_urls={
-        'Bug Reports': 'https://github.com/zwelakhem/face-swapper-app/issues',
-        'Source': 'https://github.com/zwelakhem/face-swapper-app',
+        'Bug Reports': 'https://github.com/Zwe-MDynamix/FaceSwapper_App/issues',
+        'Source': 'https://github.com/Zwe-MDynamix/FaceSwapper_App',
         'Documentation': 'https://zwelakhem.github.io/face-swapper-app/',
-        'Docker Hub': 'https://hub.docker.com/r/zwelakhem/face-swapper-app',
+        'Docker Hub': 'https://hub.docker.com/r/Zwe-MDynamix/FaceSwapper_App',
         'Funding': 'https://github.com/sponsors/zwelakhem',
     },
 )

@@ -15,12 +15,12 @@
 
 ```bash
 # Clone the empty repository
-git clone https://github.com/zwelakhem/face-swapper-app.git
+git clone https://github.com/Zwe-MDynamix/FaceSwapper_App.git
 cd face-swapper-app
 
 # Initialize git if needed
 git init
-git remote add origin https://github.com/zwelakhem/face-swapper-app.git
+git remote add origin https://github.com/Zwe-MDynamix/FaceSwapper_App.git
 ```
 
 ### 3. Create Project Structure
@@ -368,7 +368,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v5
       with:
-        images: zwelakhem/face-swapper-app
+        images: Zwe-MDynamix/FaceSwapper_App
         tags: |
           type=ref,event=branch
           type=ref,event=pr
@@ -417,7 +417,7 @@ on:
 
 env:
   REGISTRY: docker.io
-  IMAGE_NAME: zwelakhem/face-swapper-app
+  IMAGE_NAME: Zwe-MDynamix/FaceSwapper_App
 
 jobs:
   build-and-push:

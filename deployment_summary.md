@@ -3,7 +3,7 @@
 ## 🎉 Congratulations! Your Docker image is built and pushed successfully!
 
 ## 📦 Current Status
-- ✅ **Docker Image Built**: `zwelakhem/face-swapper-app:latest`
+- ✅ **Docker Image Built**: `Zwe-MDynamix/FaceSwapper_App:latest`
 - ✅ **Pushed to Docker Hub**: Available for public use
 - ✅ **Multi-stage Build**: Optimized for production
 - ✅ **Ubuntu-based**: Stable and reliable
@@ -15,7 +15,7 @@
 ```bash
 # Create repository on GitHub.com first, then:
 git init
-git remote add origin https://github.com/zwelakhem/face-swapper-app.git
+git remote add origin https://github.com/Zwe-MDynamix/FaceSwapper_App.git
 
 # Add all project files
 git add .
@@ -41,7 +41,7 @@ git push -u origin develop
 
 ```bash
 # Add GitLab remote
-git remote add gitlab https://gitlab.com/zwelakhem/face-swapper-app.git
+git remote add gitlab https://gitlab.com/Zwe-MDynamix/FaceSwapper_App.git
 
 # Push to GitLab
 git push gitlab main
@@ -65,8 +65,8 @@ git push gitlab develop
 
 ```bash
 # Pull and run your image
-docker pull zwelakhem/face-swapper-app:latest
-docker run -p 8501:8501 zwelakhem/face-swapper-app:latest
+docker pull Zwe-MDynamix/FaceSwapper_App:latest
+docker run -p 8501:8501 Zwe-MDynamix/FaceSwapper_App:latest
 
 # Visit http://localhost:8501
 # Upload test images and verify face swapping works
@@ -175,7 +175,7 @@ spec:
     spec:
       containers:
       - name: face-swapper
-        image: zwelakhem/face-swapper-app:latest
+        image: Zwe-MDynamix/FaceSwapper_App:latest
         ports:
         - containerPort: 8501
         resources:
@@ -190,7 +190,7 @@ spec:
 ### Cloud Run (Google Cloud)
 ```bash
 gcloud run deploy face-swapper \
-  --image zwelakhem/face-swapper-app:latest \
+  --image Zwe-MDynamix/FaceSwapper_App:latest \
   --platform managed \
   --port 8501 \
   --memory 4Gi \

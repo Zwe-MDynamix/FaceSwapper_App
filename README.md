@@ -5,8 +5,8 @@
 
 | **Zwe_M Dynamix** | e: zwenix@gmail.com |
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/zwelakhem/face-swapper-app)](https://hub.docker.com/r/zwelakhem/face-swapper-app)
-[![Docker Image Size](https://img.shields.io/docker/image-size/zwelakhem/face-swapper-app)](https://hub.docker.com/r/zwelakhem/face-swapper-app)
+[![Docker Pulls](https://img.shields.io/docker/pulls/Zwe-MDynamix/FaceSwapper_App)](https://hub.docker.com/r/Zwe-MDynamix/FaceSwapper_App)
+[![Docker Image Size](https://img.shields.io/docker/image-size/Zwe-MDynamix/FaceSwapper_App)](https://hub.docker.com/r/Zwe-MDynamix/FaceSwapper_App)
 [![Build Status](https://github.com/Zwe-MDynamix/FaceSwapper_App/workflows/CI%2FCD%20Pipeline/badge.svg)](https://github.com/Zwe-MDynamix/FaceSwapper_App/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -28,10 +28,10 @@ A professional-grade face swapping application built with Streamlit and powered 
 
 ```bash
 # Pull and run the latest image
-docker run -p 8501:8501 zwelakhem/face-swapper-app:latest
+docker run -p 8501:8501 Zwe-MDynamix/FaceSwapper_App:latest
 
 # Or run with custom port
-docker run -p 3000:8501 zwelakhem/face-swapper-app:latest
+docker run -p 3000:8501 Zwe-MDynamix/FaceSwapper_App:latest
 ```
 
 Visit `http://localhost:8501` to access the application.
@@ -206,7 +206,7 @@ python -m pytest --cov=src tests/
 **1. Out of Memory Error**
 ```bash
 # Increase Docker memory limit
-docker run --memory=4g -p 8501:8501 zwelakhem/face-swapper-app:latest
+docker run --memory=4g -p 8501:8501 Zwe-MDynamix/FaceSwapper_App:latest
 ```
 
 **2. Model Loading Issues**
@@ -225,7 +225,7 @@ FACE_DETECTION_CONFIDENCE=0.3  # Lower = more sensitive
 
 ```bash
 # Run with debug logging
-docker run -e STREAMLIT_LOGGER_LEVEL=debug -p 8501:8501 zwelakhem/face-swapper-app:latest
+docker run -e STREAMLIT_LOGGER_LEVEL=debug -p 8501:8501 Zwe-MDynamix/FaceSwapper_App:latest
 ```
 
 ## 🤝 Contributing
